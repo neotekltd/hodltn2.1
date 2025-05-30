@@ -8,6 +8,7 @@
   NEXT_PUBLIC_ETH_NETWORK = "mainnet"
   NODE_VERSION = "18"
   NPM_VERSION = "9"
+  NPM_FLAGS = "--legacy-peer-deps"
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
@@ -15,4 +16,4 @@
 [[redirects]]
   from = "/*"
   to = "/index.html"
-  status = 200 
+  status = 200
