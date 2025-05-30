@@ -1,0 +1,18 @@
+# Netlify configuration for Tunisia-centric P2P USDT Exchange
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[build.environment]
+  NEXT_PUBLIC_TRON_NETWORK = "mainnet"
+  NEXT_PUBLIC_ETH_NETWORK = "mainnet"
+  NODE_VERSION = "18"
+  NPM_VERSION = "9"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200 
